@@ -6,5 +6,4 @@ const connectDataBase = ()=>{
          console.log("Database connection established")
     })
 }
-
 module.exports = connectDataBase

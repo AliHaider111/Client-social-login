@@ -7,8 +7,6 @@ const facebookAppID = process.env.FACEBOOK_APP_ID
 const facebookAppSecret = process.env.FACEBOOK_APP_SECRET
 const facebookAppCallback = process.env.FACEBOOK_APP_CALLBACK
 
-
-
 module.exports = (passport)=>{
     passport.serializeUser(function (user, cb) {
        
@@ -19,7 +17,6 @@ module.exports = (passport)=>{
        
         cb(null, obj);
     });
-
 
     passport.use(new FacebookStrategy({
         clientID: facebookAppID,
